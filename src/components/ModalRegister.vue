@@ -28,6 +28,24 @@ const user = store();
               />
             </div>
             <div class="input-group mb-3">
+              <span class="input-group-text">Username</span>
+              <input
+                v-model="user.username"
+                type="text"
+                required="true"
+                class="form-control"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">Mobile number</span>
+              <input
+                v-model="user.mobilenumber"
+                type="email"
+                required="true"
+                class="form-control"
+              />
+            </div>
+            <div class="input-group mb-3">
               <span class="input-group-text">Password</span>
               <input
                 v-model="user.password"

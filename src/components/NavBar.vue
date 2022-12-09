@@ -6,7 +6,7 @@ const user = store();
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand ms-4" href="#">Vue 3 + script setup + Pinia</a>
+      <img class="logo" src="../assets/logo.png" alt="LOGO" />
       <button
         class="navbar-toggler"
         type="button"
@@ -20,15 +20,15 @@ const user = store();
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <router-link class="nav-link" to="/">Setup</router-link>
-          </li>
           <li>
-            <router-link v-if="user.isLoggedIn" class="nav-link" to="/about"
-              >About</router-link
-            >
+            <router-link
+              v-if="user.isLoggedIn"
+              class="nav-link"
+              to="/about"
+            ></router-link>
           </li>
         </ul>
+
         <form>
           <button
             v-if="!user.isLoggedIn"
@@ -60,3 +60,8 @@ const user = store();
     </div>
   </nav>
 </template>
+<style>
+.logo {
+  height: 50px;
+}
+</style>

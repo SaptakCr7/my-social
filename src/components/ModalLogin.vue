@@ -20,7 +20,7 @@ const user = store();
           <form @submit.prevent="user.signIn">
             <!-- CORREO -->
             <div class="input-group mb-3">
-              <span class="input-group-text">email</span>
+              <span class="input-group-text">Email</span>
               <input
                 v-model="user.email"
                 type="email"

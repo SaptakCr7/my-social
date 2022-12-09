@@ -12,10 +12,8 @@ onAuthStateChanged(auth, (user) => {
     // eslint-disable-next-line no-unused-vars
     const uid = user.uid;
     datos.isLoggedIn = true;
-    console.log("verdadero");
   } else {
     datos.isLoggedIn = false;
-    console.log("falso");
   }
 });
 </script>

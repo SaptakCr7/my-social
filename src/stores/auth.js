@@ -12,6 +12,8 @@ export const store = defineStore({
   state: () => ({
     isLoggedIn: true,
     email: "",
+    username: "",
+    mobilenumber: "",
     password: "",
     repassword: "",
     errorMessage: "",
@@ -20,10 +22,17 @@ export const store = defineStore({
   actions: {
     register() {
       const auth = getAuth();
-      createUserWithEmailAndPassword(auth, this.email, this.password)
+      createUserWithEmailAndPassword(
+        auth,
+        this.email,
+        this.password,
+        this.username,
+        this.mobilenumber
+      )
         .then((userCredential) => {
           // eslint-disable-next-line no-unused-vars
           const user = userCredential.user;
+          alert("Registration compleeted");
         })
         .catch((error) => {
           // eslint-disable-next-line no-unused-vars
@@ -37,7 +46,7 @@ export const store = defineStore({
       const auth = getAuth();
       signInWithEmailAndPassword(auth, this.email, this.password)
         .then((userCredential) => {
-          router.push("/auth");
+          router.push("/about");
           // eslint-disable-next-line no-unused-vars
           const user = userCredential.user;
         })
