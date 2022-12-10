@@ -18,7 +18,7 @@ const user = store();
         </div>
         <div class="modal-body">
           <form @submit.prevent="user.signIn">
-            <!-- CORREO -->
+            <!-- Email -->
             <div class="input-group mb-3">
               <span class="input-group-text">Email</span>
               <input
@@ -44,7 +44,6 @@ const user = store();
                 class="btn btn-primary"
                 data-bs-dismiss="modal"
               >
-                <!-- Cierra el modal -->
                 Log In
               </button>
             </div>

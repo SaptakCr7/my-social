@@ -1,11 +1,13 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
 import ModalSearch from "../components/ModalSearch.vue";
+import ModalSocialVue from "../components/ModalSocial.vue";
+import PostApiVue from "../components/PostApi.vue";
 </script>
 
 <template>
   <Navbar />
   <ModalSearch />
-  <h1>Autorización</h1>
-  <h3>Solo para usuarios regristrados</h3>
+  <ModalSocialVue />
+  <PostApiVue />
 </template>

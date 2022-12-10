@@ -54,7 +54,6 @@ const user = store();
                 class="form-control"
               />
             </div>
-            <!-- REPASSWORD -->
             <div class="input-group mb-3">
               <span class="input-group-text">Repeat Password</span>
               <input

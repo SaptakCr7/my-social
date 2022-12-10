@@ -4,9 +4,8 @@ const user = store();
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
     <div class="container-fluid">
-      <img class="logo" src="../assets/logo.png" alt="LOGO" />
       <button
         class="navbar-toggler"
         type="button"
@@ -19,7 +18,8 @@ const user = store();
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center">
+          <img class="logo" src="../assets/logo.png" alt="LOGO" />
           <li>
             <router-link
               v-if="user.isLoggedIn"

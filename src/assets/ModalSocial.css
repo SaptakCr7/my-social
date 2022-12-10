@@ -1,0 +1,12 @@
+.profile-photo {
+  width: 48px;
+  height: auto;
+}
+
+.flex-menu {
+  display: flex;
+}
+
+.flex-menu li:not(:last-child) {
+  margin-right: 40px;
+}
