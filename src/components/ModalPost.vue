@@ -38,7 +38,7 @@ export default {
 <style scoped>
 textarea {
   width: 95%;
-  height: 70px;
+  height: 100px;
   padding: 10px;
   font-size: 20px;
   margin-bottom: 20px;
@@ -60,13 +60,9 @@ textarea {
   cursor: pointer;
 }
 .post-form {
-  display: flex;
-  margin: auto;
-  margin-bottom: 10px;
-  flex-direction: column;
   border-radius: 1rem;
-  width: 70%;
-
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   border: 2px solid #d8d8d8;
   background-color: white;

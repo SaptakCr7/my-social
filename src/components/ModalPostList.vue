@@ -19,7 +19,7 @@ export default {
 };
 </script>
 <template>
-  <div v-for="(post, index) in posts" :key="index" class="post-container">
+  <div v-for="post in posts" :key="post" class="post-container">
     <h3>{{ post.body }}</h3>
     <span>posted {{ post.date }}</span>
     <button @click="deletePost" class="delButton">Delete</button>
@@ -27,7 +27,6 @@ export default {
 </template>
 <style>
 .post-container {
-  width: 90%;
   padding: 10px 20px 20px 20px;
   border-radius: 20px;
   margin-top: 15px;
