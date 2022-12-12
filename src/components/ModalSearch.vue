@@ -1,4 +1,14 @@
-<script setup></script>
+<script>
+export default {
+  data() {
+    return {
+      filters: "",
+      term: "",
+    };
+  },
+  props: ["filterPosts", "search", "filteredPosts"],
+};
+</script>
 <template>
   <form class="d-flex" role="search">
     <input
@@ -6,8 +16,18 @@
       type="search"
       placeholder="Search For Freinds"
       aria-label="Search"
+      id="search"
+      v-model="term"
+      @keypress.enter="search(term)"
     />
-    <button class="btn btn-outline-success" type="submit">Search</button>
+    <p
+      v-for="filter in filters"
+      :key="filter"
+      @click="() => filterPosts(filter)"
+    >
+      {{ filter }}
+    </p>
+    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
   </form>
 </template>
 <style>

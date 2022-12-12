@@ -1,15 +1,24 @@
-<script setup>
+<script>
 import Navbar from "../components/Navbar.vue";
 import ModalSearch from "../components/ModalSearch.vue";
-import ModalSocialVue from "../components/ModalSocial.vue";
+import ModalSocial from "../components/ModalSocial.vue";
 import ModalApi from "../components/ModalApi.vue";
 import ModalPost from "../components/ModalPost.vue";
-ModalPost;
+
+export default {
+  components: {
+    Navbar,
+    ModalSearch,
+    ModalPost,
+    ModalSocial,
+    ModalApi,
+  },
+};
 </script>
 
 <template>
   <Navbar />
-  <ModalSocialVue />
+  <ModalSocial />
   <div class="main">
     <div class="list">
       <ModalSearch />

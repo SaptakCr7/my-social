@@ -1,7 +1,14 @@
-<script setup>
+<script>
 import Navbar from "../components/Navbar.vue";
 import ModalLogIn from "../components/ModalLogIn.vue";
 import ModalRegister from "../components/ModalRegister.vue";
+export default {
+  components: {
+    Navbar,
+    ModalLogIn,
+    ModalRegister,
+  },
+};
 </script>
 
 <template>
