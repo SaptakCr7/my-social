@@ -1,6 +1,12 @@
-<script setup>
+<script>
 import { store } from "../stores/auth.js";
-const user = store();
+export default {
+  data() {
+    return {
+      user: store(),
+    };
+  },
+};
 </script>
 
 <template>

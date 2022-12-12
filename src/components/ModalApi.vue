@@ -19,7 +19,7 @@ export default {
     <table class="table">
       <tbody>
         <tr>
-          <th scope="row">{{ post.id }}</th>
+          <td>{{ post.id }}</td>
           <td>{{ post.name }}</td>
           <td>{{ post.username }}</td>
           <td>{{ post.email }}</td>
@@ -28,19 +28,8 @@ export default {
     </table>
   </div>
 </template>
-<style>
+<style scoped>
 .table {
-  margin: auto;
-  width: 55%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.th {
-  margin: auto;
   display: flex;
-}
-.tr {
-  margin: 10px;
 }
 </style>

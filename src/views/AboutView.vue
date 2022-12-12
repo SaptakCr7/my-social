@@ -21,7 +21,7 @@ ModalPost;
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .main {
   padding: 10px;
   width: 100%;
